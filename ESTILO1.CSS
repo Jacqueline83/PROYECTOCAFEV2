@@ -68,24 +68,24 @@ header h1 {
 }
 
 <!--LOGO OFICIAL-->
+/* ==========================================
+   LOGO OFICIAL (Corregido con comentarios CSS)
+   ========================================== */
 .logo1 {
-    text-align: right;
-    margin: 30px auto; 
+    text-align: center;
+    margin: 30px auto;
     padding: 8px;
 }
 
 .logo1 img {
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
-    filter: drop-shadow(0 5px 10px rgba(111, 78, 55, 0.2)); 
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 5px 10px rgba(111, 78, 55, 0.2));
     cursor: pointer;
-    text-align: right;
 }
 
 .logo1 img:hover {
-    filter: drop-shadow(0 8px 15px rgba(111, 78, 55, 0.3)); 
-    text-align: right;
+   filter: drop-shadow(0 8px 15px rgba(111, 78, 55, 0.3));
 }
-
 <!--IMAGENES DE, VISION,MISION, OBJETIVO Y MENU-->
 .logo {
     text-align: center; 
