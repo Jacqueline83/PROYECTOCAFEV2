@@ -268,3 +268,112 @@ button {
     font-weight: bold;
     border: solid;
 }
+
+/* ==========================================================================
+   APARTADO RESPONSIVE (MEDIA QUERIES)
+   ========================================================================== */
+
+/* 1. Ajustes para Tablets y pantallas medianas (Móviles en horizontal, iPads, Huawei MatePad, etc.) */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Texto del encabezado un poco más pequeño */
+    }
+
+    header .line-left { left: 5%; }
+    header .line-right { right: 5%; }
+
+    .MVO-contenedor {
+        width: 95%;
+        gap: 15px;
+    }
+
+    .MISION, .VISION, .OBJETIVO, .MENU {
+        flex: 1 1 45%; /* Se acomodarán de dos en dos en pantallas medianas */
+        max-width: none;
+    }
+
+    .MVO {
+        padding: 30px 20px;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* 2. Ajustes para Smartphones (iPhone, Samsung, Huawei, Xiaomi, etc. en vertical) */
+@media screen and (max-width: 480px) {
+    body {
+        line-height: 1.5; /* Ajuste menor para que el texto no ocupe tanto espacio */
+    }
+
+    header {
+        padding: 30px 10px;
+    }
+
+    header h1 {
+        font-size: 1.6rem; /* Se adapta a pantallas angostas para que no se corte */
+    }
+
+    /* Ocultamos las líneas laterales en móviles muy pequeños para limpiar el diseño */
+    header .line-left,
+    header .line-right {
+        display: none;
+    }
+
+    /* El logo oficial se centra automáticamente en móviles para mejorar la visualización */
+    .logo1 {
+        text-align: center;
+        margin: 15px auto;
+    }
+    .logo1 img, .logo1 img:hover {
+        text-align: center;
+    }
+
+    .MVO-contenedor {
+        flex-direction: column; /* Las tarjetas se apilan una debajo de otra */
+        align-items: stretch;
+    }
+
+    .MISION, .VISION, .OBJETIVO, .MENU {
+        flex: 1 1 auto;
+        max-width: 100%;
+        padding: 20px 15px;
+    }
+
+    .MVO {
+        padding: 25px 15px;
+        margin: 20px 10px;
+    }
+
+    .MVO::before {
+        display: none; /* Quitamos la línea lateral decorativa para ganar espacio en los bordes */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /* En móviles, el efecto hover tradicional de mover a la derecha puede salirse de la pantalla */
+    ul li:hover {
+        transform: scale(1.02); /* Cambiamos el desplazamiento por un leve aumento de tamaño */
+    }
+
+    button {
+        width: 100%; /* El botón ocupa todo el ancho disponible para que sea más fácil de presionar con el dedo */
+        padding: 12px 20px;
+        margin: 30px auto 10px auto;
+    }
+}
